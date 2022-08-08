@@ -3,7 +3,7 @@
 ![TypeScript: Strict](https://img.shields.io/badge/typescript-strict-brightgreen.svg)
 [![Speedy Web Compiler: SWC](https://img.shields.io/badge/swc-speedy%20web%20compier-brightgreen)](https://swc.rs/)
 
-## A fun web game to follow a  color sequence.
+## A fun web game where you follow the  color sequence.
 _AKA Simon Says_
 
 
@@ -11,7 +11,7 @@ _AKA Simon Says_
   <img width="15%" alt="marco-polo sequence" src="marco-polo.png">
 </p>
 
-## What you you spy on in this project 👁️‍🗨️️ 👁️‍🗨️️ 
+## What you spy on in this project 👁️‍🗨️️ 👁️‍🗨️️ 
 
 _Don't know about you, but I enjoy seeing how others implement solutions ,so happy days_
 
