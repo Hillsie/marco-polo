@@ -1,4 +1,8 @@
-# Marco-Polo
+# Marco-Polo AKA Simon Says
+[![MobX: MobX](https://img.shields.io/badge/mobx-mobx-brightgreen)](https://mobx.js.org/README.html)
+![TypeScript: Strict](https://img.shields.io/badge/typescript-strict-brightgreen.svg)
+[![Speedy Web Compiler: SWC](https://img.shields.io/badge/swc-speedy%20web%20compier-brightgreen)](https://swc.rs/)
+
 ## A fun web game to follow a  color sequence.
 _AKA Simon Says_
 
