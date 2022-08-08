@@ -1,0 +1,10 @@
+/* -- import tailwind.css -- */
+@import "tailwind.css"; 
+
+body {
+  overflow-x: hidden;
+}
+
+[hidden] {
+  pointer-events: none;
+}

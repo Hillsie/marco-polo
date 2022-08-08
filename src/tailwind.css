@@ -1,0 +1,58 @@
+/* ignore eslint warnings on @tailwind-settings */
+/* Ignore any lint warning here - known issue */
+
+@tailwind base;
+@tailwind components;
+@layer base {
+    body {
+        @apply select-none;
+    }
+    @screen sm {
+        body {
+        @apply select-none ;
+    }
+}
+/* Focus  ring, thanks Kent C. Dodds! */
+.focus-ring {
+  @apply focus:outline-none focus-within:outline-none ring-lime-500 ring-offset-2 ring-offset-white transition duration-300 focus-within:ring-2  hover:ring-2 hover:ring-lime-400 disabled:ring-0 group-hover:ring-2 group-hover:ring-lime-400  dark:ring-offset-gray-900;
+}
+
+/* TODO: Dark mode WIP */
+  .bg-inverse {
+    @apply bg-slate-800 dark:bg-white;
+  }
+  .text-primary {
+    @apply text-slate-800 dark:text-slate-100;
+  }
+
+  .text-inverse {
+    @apply text-slate-100 dark:text-slate-800;
+  }
+}
+  
+@tailwind utilities;
+
+/* Shake animation -- thanks CSS Tricks! */
+.animate-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1%);
+  }
+  20%, 80% {
+    transform: translateX(2%);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-4%);
+  }
+  40%, 60% {
+    transform: translateX(5%);
+  }
+}
+
+
+  
+
+
+

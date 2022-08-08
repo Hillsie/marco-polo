@@ -1,0 +1,27 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true
+    },
+    "target": "es2022",
+    "loose": false,
+    "minify": {
+      "compress": {
+        "arrows": true,
+        "collapse_vars": true,
+        "dead_code": true
+    },
+      "mangle": {
+        "topLevel": false,
+        "keepFnNames": false,
+        "keepPrivateProps": false,
+        "keepClassNames": false
+      },
+      "format": {
+          "beautify": false,
+          "comments": false
+      }
+    }
+  }
+}
