@@ -110,7 +110,7 @@ const ButtonObserved = observer(function SVGButtons(options: ButtonConfig) {
 
 const SimonSays = observer(function SimonSays() {
   return (
-    <div className="grid grid-cols-2 grid-rows-2 w-40 landscape:w-40 sm:w-64 sm:landscape:w-64 landscape:lg:w-96 lg:w-96 landscape:md:w-64 md:w-96 xl:w-[600px] drop-shadow-lg shadow-neutral-900 rounded-full z-10">
+    <div className="grid grid-cols-2 grid-rows-2 w-80 landscape:w-40  sm:landscape:w-64 landscape:lg:w-96 lg:w-96 landscape:md:w-64 md:w-96 xl:w-[600px] drop-shadow-lg shadow-neutral-900 rounded-full z-10">
       {configAnimation.map((config: ButtonConfig) => (
         <ButtonObserved {...config} />
       ))}
