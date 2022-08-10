@@ -38,7 +38,7 @@ export const SideMenu = () => {
       ref={containerRef}
     >
       <motion.div variants={sidebar} />
-     <Navigation isOpen={isOpen} />
+      <Navigation isOpen={isOpen} />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

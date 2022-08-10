@@ -1,11 +1,5 @@
-import {
-  makeObservable,
-  observable,
-  action,
-  flow,
-} from "mobx";
+import { makeObservable, observable, action, flow } from "mobx";
 import Queue from "./queue";
-
 
 type Turn = "marco" | "player" | "idle";
 type SequenceState = "success" | "failed" | "idle";
@@ -72,7 +66,7 @@ class MarcoPolo {
     if (this.sequencer.length > 0) {
       this.sequencer.clear();
     }
-    const randomNum = this.generateRandTile(5);  // random tile between 1 and 4
+    const randomNum = this.generateRandTile(5); // random tile between 1 and 4
     this.queue.enqueue(randomNum);
   }
 
@@ -80,7 +74,6 @@ class MarcoPolo {
     // tiles are between 1 and 4
     return Math.floor(Math.random() * (max - 1) + 1);
   }
-
 
   reset() {
     this.activate = false;
@@ -104,14 +97,14 @@ class MarcoPolo {
         const tile = this.queue.peek();
         if (typeof tile === "number") {
           this.activeTile.push(tile);
-          this.sequencer.enqueue(tile); 
+          this.sequencer.enqueue(tile);
         }
         // Toggle the UI on and off
         this.activate = yield Timeout(true, speed1);
         this.activate = yield Timeout(false, speed2);
         // clear the active tile after the animation is complete
         this.activeTile = [];
-       // remove the  tile from the queue
+        // remove the  tile from the queue
         this.queue.dequeue();
       }
       // delay before the players turn
@@ -130,10 +123,9 @@ class MarcoPolo {
       this.queue.enqueue(num);
       // entire sequence is correct
       if (this.sequencer.length > this.score) {
-        this.score = this.sequencer.length;
+        this.score = this.sequencer.length - 1; // account for a failure being 1 less than the current sequence
       }
       this.sequencer.dequeue();
-      // TODO: check logic
       if (this.sequencer.length === 0) {
         this.turn = "marco";
         const randomNum = this.generateRandTile(5);
@@ -141,7 +133,7 @@ class MarcoPolo {
         this.animate();
       }
     } else {
-       this.turn = "idle";
+      this.turn = "idle";
       this.sequenceSelected = "failed";
       this.gamesPlayed = this.gamesPlayed + 1;
       this.delayedRestart();
@@ -170,7 +162,7 @@ class MarcoPolo {
   }
 
   isWrong() {
-    return this.sequenceSelected === "failed"? true : false;
+    return this.sequenceSelected === "failed" ? true : false;
   }
 
   filterActive(num: number) {

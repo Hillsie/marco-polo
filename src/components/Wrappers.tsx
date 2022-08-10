@@ -9,10 +9,14 @@ interface TextWrap {
     uppercase?: boolean;
     datestyle?: true;
   };
-  className?:"string";
+  className?: "string";
 }
 
-export default function TextStyleWrap({ children, options, className }: TextWrap) {
+export default function TextStyleWrap({
+  children,
+  options,
+  className,
+}: TextWrap) {
   return (
     <div
       className={clsx(
@@ -30,18 +34,35 @@ export default function TextStyleWrap({ children, options, className }: TextWrap
 }
 
 interface GradientWrap {
-  children: React.ReactNode,
-  className?: string,
+  children: React.ReactNode;
+  className?: string;
 }
 
-export function GradientStyleWrap({ children, className }:GradientWrap) {
+export function GradientStyleWrap({ children, className }: GradientWrap) {
   return (
-    <span className={
-      clsx(
+    <span
+      className={clsx(
         className,
-        "font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-blue-600 to-violet-600",
-     )}>
+        "font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-blue-600 to-violet-600"
+      )}
+    >
       {children}
     </span>
+  );
+}
+
+interface IconWrap {
+  children: React.ReactNode;
+  style: { border: string };
+}
+
+export function IconStyleWrap({ children, style }: IconWrap) {
+  return (
+    <div
+      className="icon-placeholder flex justify-center items-center"
+      style={style}
+    >
+      {children}
+    </div>
   );
 }

@@ -10,7 +10,7 @@ import NoMatch from "./pages/NoMatch";
 export const Router = observer(function Router() {
   return (
     <div className="bg-slate-100 relative grid gap-4 grid-cols-[0.05fr_0.3fr_2fr_0.05fr] grid-rows-[0.05fr_0.1fr_2fr_0.1fr] h-screen">
-      <div className="col-start-2 row-start-1 self-center relative">
+      <div className="relative col-start-2 row-start-1 self-center">
         <SideMenu />
       </div>
       <Routes>
