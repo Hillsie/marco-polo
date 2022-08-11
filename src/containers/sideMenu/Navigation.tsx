@@ -17,7 +17,7 @@ export const Navigation = ({ isOpen }: { isOpen: boolean }) => (
     variants={variants}
     className={clsx(
       isOpen &&
-        "border-2 rounded-md border-slate-200 bg-gradient-to-r from-slate-50 to-slate-100 pt-5 px-3"
+        "border-2 rounded-md border-slate-200 bg-gradient-to-r from-slate-50 to-slate-100 pt-5 px-3 z-10"
     )}
   >
     {itemIds.map((i) => (

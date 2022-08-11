@@ -1,7 +1,7 @@
 {
-  "name": "achtungswc",
-  "description": "React  with SWC and other things",
-  "version": "0.1.1",
+  "name": "marco-polo",
+  "description": "Marco Polo - A fun Web Game where you follow the color sequence",
+  "version": "0.2.1",
   "license": "MIT",
   "keywords": [
     "swc",
