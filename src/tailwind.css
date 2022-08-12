@@ -15,13 +15,17 @@
 
 /* Tool tip */
 /* add attribute to a component to enable tool tip  `data-tooltip="handy tool tip" ` */
+/* disable tool tip `data-tooltip-visible="false"  in code` */
+[data-tooltip-visible="false"] {
+  @apply after:content-[attr(data-tooltip)] after:hidden;
+}
  [data-tooltip] {
-     @apply  after:content-[attr(data-tooltip)] after:absolute  after:delay-700 after:ease-in after:transition-all 
-   after:hover:-translate-y-1 after:hover:scale-125 after:px-2 
-   after:z-30  after:top-20 after:-right-10 after:leading-none after:underline after:decoration-sky-500
-   after:font-normal after:text-xs after:text-gray-500 after:bg-gray-800 after:border-2 after:border-gray-900 after:rounded-b-md after:rounded-tr-lg after:shadow-lg after:invisible  after:hover:visible ;
+     @apply  after:content-[attr(data-tooltip)] after:absolute  after:delay-700 after:ease-in 
+     after:transition-all after:hover:-translate-y-1 after:hover:scale-125 after:px-2 
+     after:z-30  after:top-20 after:-right-10 after:leading-none after:font-normal after:text-xs 
+     after:text-gray-500 after:bg-gray-800 after:border-2 after:border-gray-900 
+     after:rounded-b-md after:rounded-tr-lg after:shadow-lg after:invisible  after:hover:visible ;
     }
-
 
 /* Focus  ring, thanks Kent C. Dodds! */
 .focus-ring {

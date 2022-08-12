@@ -72,7 +72,8 @@ const GameController = observer(function GameController({
             onClick={onClick}
             type="button"
             className=" absolute hover:bg-slate-50 ease-out active:ease-in-out  transition-all duration-150 flex-none mx-auto w-20 h-20 rounded-full  shadow-md flex items-center justify-center rouned-full backdrop-blur"
-            aria-label="start playing"
+            aria-label={tooltip}
+            data-tooltip-visible="false"
             data-tooltip={tooltip}
           >
             <svg
