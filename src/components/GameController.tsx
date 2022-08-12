@@ -20,6 +20,7 @@ const GameController = observer(function GameController({
   }, [countdown.isfinished]);
 
   const onClick = () => {
+    // Start the game if it is idle
     if (store.turn === "idle") {
       countdown.start();
     } else {

@@ -21,8 +21,8 @@ class CountDown {
   seconds: NumRange = 5;
   // Added to class to include "topping up" or "pausing" the counter
   // IsFinished is not in sync with isRunning.  Remains false while the timer is runningl
-   isRunning: boolean = false;
-   isFinished: boolean = false;
+  isRunning: boolean = false;
+  isFinished: boolean = false;
 
   constructor() {
     makeAutoObservable(this);
@@ -53,11 +53,14 @@ class CountDown {
         throw new Error("seconds must be between 1 and 10");
       }
     }
-    //  IsFinished flag remains false while the timer starts.
-    this.isFinished = false;
-    this.isRunning = true;
-    this.seconds = typeof seconds === "undefined" ? 5 : seconds;
-    this.decrement();
+    // Only start if the timer is not running.
+    if (this.isRunning === false) {
+      //  IsFinished flag remains false while the timer starts.
+      this.isFinished = false;
+      this.isRunning = true;
+      this.seconds = typeof seconds === "undefined" ? 5 : seconds;
+      this.decrement();
+    }
   }
 
   reset() {
