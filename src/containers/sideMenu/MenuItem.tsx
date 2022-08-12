@@ -6,9 +6,10 @@ const text = [
   "Play With Friends",
   "Trash Scores",
   "Email",
-  "Phone",
-  "Sponsor Me",
+  "Call",
+  "Keep the Lights On",
 ];
+
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 const variants = {
