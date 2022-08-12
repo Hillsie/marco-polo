@@ -31,6 +31,7 @@ const GameController = observer(function GameController({
   const deriveVisiblity = () => {
     return !countdown.isfinished || store.whoseTurn() === "idle";
   };
+ const tooltip = store.getToolTip();
 
   return (
     <div
@@ -72,6 +73,7 @@ const GameController = observer(function GameController({
             type="button"
             className=" absolute hover:bg-slate-50 ease-out active:ease-in-out  transition-all duration-150 flex-none mx-auto w-20 h-20 rounded-full  shadow-md flex items-center justify-center rouned-full backdrop-blur"
             aria-label="start playing"
+            data-tooltip={tooltip}
           >
             <svg
               className="pt-[1.5px] pl-[1.5px] w-14 h-14  transition-all duration-500 hover:w-16 hover:h-16 active:w-14 active:h-14 active:ease-in active:duration-150"

@@ -56,6 +56,7 @@ class MarcoPolo {
       whoseTurn: observable,
       sequenceSelected: observable,
       isWrong: observable,
+      getToolTip: observable,
     });
   }
 
@@ -159,6 +160,16 @@ class MarcoPolo {
 
   whoseTurn() {
     return this.turn;
+  }
+
+  getToolTip() {
+    // Human readable text for the tooltips
+    const toolTip = {
+      marco: "Marco is thinking",
+      player: "Your turn to select a tile or Press to Reset",
+      idle: "Ready to play?",
+    };
+    return toolTip[this.turn];
   }
 
   isWrong() {
