@@ -5,9 +5,9 @@ import { GradientStyleWrap, IconStyleWrap } from "../../components/Wrappers";
 const text = [
   "Play With Friends",
   "Trash Scores",
-  "Email",
+  "Email ",
   "Call",
-  "Keep the Lights On",
+  "Keep Lights On",
 ];
 
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
