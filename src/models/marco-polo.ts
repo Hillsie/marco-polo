@@ -165,7 +165,7 @@ class MarcoPolo {
   getToolTip() {
     // Human readable text for the tooltips
     const toolTip = {
-      marco: "Marco is thinking",
+      marco: "Simon is thinking",
       player: "Your turn to select a tile or Press to Reset",
       idle: "Ready to play?",
     };
