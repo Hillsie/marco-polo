@@ -18,7 +18,7 @@ async function Pulse({ seconds }: { seconds: number; }): Promise<number> {
 
 class CountDown {
   // Following 3 are private. Cannot create tests if they are private.
-  seconds: NumRange = 5;
+  seconds: NumRange = 3;
   // Added to class to include "topping up" or "pausing" the counter
   // IsFinished is not in sync with isRunning.  Remains false while the timer is runningl
   isRunning: boolean = false;
@@ -58,13 +58,13 @@ class CountDown {
       //  IsFinished flag remains false while the timer starts.
       this.isFinished = false;
       this.isRunning = true;
-      this.seconds = typeof seconds === "undefined" ? 5 : seconds;
+      this.seconds = typeof seconds === "undefined" ? 3 : seconds;
       this.decrement();
     }
   }
 
   reset() {
-    this.seconds = 5;
+    this.seconds = 3;
     this.isRunning = false;
     this.isFinished = false;
   }

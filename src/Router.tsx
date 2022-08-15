@@ -11,7 +11,7 @@ export const Router = observer(function Router() {
   return (
     <div className="relative bg-slate-100  grid gap-4 grid-cols-[0.05fr_0.3fr_2fr_0.05fr] grid-rows-[0.01fr_0.1fr_2fr_0.1fr] h-screen">
       <Navbar />
-      <div className="relative col-start-2 col-end-4 row-start-3 row-end-4">
+      <div className="relative col-start-1 col-end-5 row-start-3 row-end-5">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

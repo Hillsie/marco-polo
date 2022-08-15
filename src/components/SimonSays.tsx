@@ -11,7 +11,6 @@ const configAnimation = [
     styles: {
       defaults:
         "relative fill-lime-500 stroke-1 focus:stroke-[7] h-auto w-auto top-0 left-0  bg-transparent drop-shadow-lg stroke-lime-500 transition",
-      hover: "hover:fill-lime-500 hover:stroke-lime-300  hover:stroke-[7]",
       active:
         "active:stroke-lime-500 active:fill-lime-300 sm:active:fill-lime-300 active:top-2 ative:left-2 md:active:top-1 md:ative:left-1",
       animate: "fill-lime-300 stroke-lime-500 stroke-[7]",
@@ -27,7 +26,6 @@ const configAnimation = [
     styles: {
       defaults:
         "relative  fill-rose-600 stroke-1 focus:stroke-[7]  h-auto w-auto top-0 left-0  bg-transparent drop-shadow-lg stroke-rose-600 transition",
-      hover: "hover:fill-rose-600 hover:stroke-rose-400 hover:stroke-[7]",
       active:
         "active:stroke-rose-600 active:fill-rose-400 sm:active:fill-rose-400 active:top-2 ative:left-2 md:active:top-1 md:ative:left-1",
       animate: "fill-rose-400 stroke-rose-600 stroke-[7]",
@@ -43,7 +41,6 @@ const configAnimation = [
     styles: {
       defaults:
         "relative fill-amber-400  focus:stroke-[7] stroke-1  h-auto w-auto top-0 left-0 bg-transparent drop-shadow-lg transition",
-      hover: "hover:fill-amber-400 hover:stroke-amber-200 hover:stroke-[7]",
       active:
         "active:stroke-amber-400 active:fill-amber-200 sm:active:fill-amber-200 active:-top-2 ative:-left-2 md:active:-top-1 md:ative:-left-1",
       animate: "fill-amber-200 stroke-amber-600 stroke-[7]",
@@ -59,7 +56,6 @@ const configAnimation = [
     styles: {
       defaults:
         "relative fill-violet-800  focus:stroke-[7] stroke-1  h-auto w-auto top-0 left-0 bg-transparent drop-shadow-lg transition",
-      hover: "hover:fill-violet-800 hover:stroke-violet-500 hover:stroke-[7]",
       active:
         "active:stroke-violet-800 active:fill-violet-500 sm:active:fill-violet-500 active:-top-2 ative:-left-2 md:active:-top-1 md:ative:-left-1",
       animate: "fill-violet-500 stroke-violet-800 stroke-[7]",
@@ -74,17 +70,17 @@ interface ButtonConfig {
   key: string;
   color: string;
   id: number;
-  styles: { defaults: string; active: string; hover: string; animate: string };
+  styles: { defaults: string; active: string; animate: string };
   viewBox: string;
   svgPath: string;
 }
 
 const ButtonObserved = observer(function SVGButtons(options: ButtonConfig) {
   const store = MarcoPoloStore;
-  const isPlayersTurn = store.whoseTurn() === "player"? true : false;
-  // reset css transition state 
-  const isWrong = ()=> store.isWrong()?"animate-shake": "animate-none";
-  const ariaLabel = `color is ${options.color} and select when your turn`
+  const isPlayersTurn = store.whoseTurn() === "player" ? true : false;
+  // reset css transition state
+  const isWrong = () => (store.isWrong() ? "animate-shake" : "animate-none");
+  const ariaLabel = `color is ${options.color} and select when your turn`;
   const activate = store.filterActive(options.id);
 
   return (
@@ -93,12 +89,13 @@ const ButtonObserved = observer(function SVGButtons(options: ButtonConfig) {
       type="button"
       aria-label={ariaLabel}
       disabled={!isPlayersTurn}
-      className={clsx(options.styles.defaults, {
-        [options.styles.active]: isPlayersTurn,
-        [options.styles.hover]: isPlayersTurn,
-        [options.styles.animate]: activate,
-      }, isWrong()
-      
+      className={clsx(
+        options.styles.defaults,
+        {
+          [options.styles.active]: isPlayersTurn,
+          [options.styles.animate]: activate,
+        },
+        isWrong()
       )}
     >
       <svg viewBox={`${options.viewBox}`} xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +107,7 @@ const ButtonObserved = observer(function SVGButtons(options: ButtonConfig) {
 
 const SimonSays = observer(function SimonSays() {
   return (
-    <div className="grid grid-cols-2 grid-rows-2 w-80 landscape:w-40  sm:landscape:w-64 landscape:lg:w-96 lg:w-96 landscape:md:w-64 md:w-96 xl:w-[600px] drop-shadow-lg shadow-neutral-900 rounded-full z-10">
+    <div className="grid grid-cols-2 grid-rows-2 w-72 landscape:w-40  sm:landscape:w-64 landscape:lg:w-96 lg:w-96 landscape:md:w-64 md:w-96 xl:w-[600px] drop-shadow-lg shadow-neutral-900 rounded-full z-10">
       {configAnimation.map((config: ButtonConfig) => (
         <ButtonObserved {...config} />
       ))}

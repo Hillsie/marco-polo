@@ -6,9 +6,9 @@ describe("CountDown", () => {
       const countDown = new CountDown();
       expect(countDown).toBeInstanceOf(CountDown);
     }),
-      it("should default seconds to 5", () => {
+      it("should default seconds to 3", () => {
         const countDown = new CountDown();
-        expect(countDown.seconds).toBe(5);
+        expect(countDown.seconds).toBe(3);
       }),
       it("should set the isRunning flag to false", () => {
         const countDown = new CountDown();

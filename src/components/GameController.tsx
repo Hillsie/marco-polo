@@ -31,19 +31,19 @@ const GameController = observer(function GameController({
   const deriveVisiblity = () => {
     return !countdown.isfinished || store.whoseTurn() === "idle";
   };
- const tooltip = store.getToolTip();
+  const tooltip = store.getToolTip();
 
   return (
     <div
       className={clsx(
-        "absolute flex items-center justify-center transition-all duration-500 rounded-full  w-80  h-80 landscape:w-40 landscape:h-40 sm:w-64 sm:h-60 sm:landscape:w-64 sm:landscape:h-64 landscape:lg:w-96 landscape:lg:h-96 lg:w-96 landscape:md:w-64 md:w-96 xl:w-[600px] lg:h-96 landscape:md:h-64 md:h-96 xl:h-[600px]",
+        "absolute flex items-center justify-center transition-all duration-500 rounded-full  w-72  h-72 landscape:w-40 landscape:h-40 sm:w-64 sm:h-60 sm:landscape:w-64 sm:landscape:h-64 landscape:lg:w-96 landscape:lg:h-96 lg:w-96 landscape:md:w-64 md:w-96 xl:w-[600px] lg:h-96 landscape:md:h-64 md:h-96 xl:h-[600px]",
         { "bg-clip-border backdrop-blur-sm z-20": deriveVisiblity() }
       )}
     >
       <div className="z-20 flex flex-col align-middle rounded-full">
         <div
           className={clsx(
-            "z-20 absolute -top-20 landscape:md-top-20 md:top-0 border-slate-300 border-2 p-4 self-center rounded-md bg-slate-100 tabular-nums space-between",
+            "z-20 absolute -top-5 border-slate-300 border-2 p-4 self-center rounded-md bg-slate-100 tabular-nums space-between",
             { "hidden -z-10": !deriveVisiblity() }
           )}
         >
