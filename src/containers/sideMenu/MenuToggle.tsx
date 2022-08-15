@@ -11,8 +11,11 @@ const Path = (props: any) => (
   />
 );
 
-export const MenuToggle = ({ toggle }:{ toggle: any}) => (
-  <button onClick={toggle}>
+export const MenuToggle = ({ toggle }: { toggle: any }) => (
+  <button
+    className="relative flex justify-center items-center z-10"
+    onClick={toggle}
+  >
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{

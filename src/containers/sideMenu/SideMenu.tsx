@@ -34,7 +34,6 @@ export const SideMenu = () => {
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      onBlur={() => isOpen && toggleOpen()}
       custom={height}
       ref={containerRef}
     >
