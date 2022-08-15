@@ -3,6 +3,7 @@ import { GameController } from "../components/GameController";
 import { SimonSays } from "../components/SimonSays";
 import { observer } from "mobx-react";
 import { MarcoPoloStore } from "../models/marco-polo";
+import ErrorBoundary from "./ErrorBoundary";
 
 const MainContent = observer(function MainContent(): JSX.Element {
   // Apply context sparingly > https://reactjs.org/docs/context.html#before-you-use-context
@@ -10,8 +11,10 @@ const MainContent = observer(function MainContent(): JSX.Element {
   const store = MarcoPoloStore;
   return (
     <div className="relative flex flex-col items-center z-0">
-      <SimonSays />
-      <GameController store={store} />
+      <ErrorBoundary>
+        <SimonSays />
+        <GameController store={store} />
+      </ErrorBoundary>
     </div>
   );
 });
