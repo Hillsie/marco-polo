@@ -1,36 +1,57 @@
-import React, { Component, ErrorInfo, ReactNode } from "react";
+import * as React from "react";
+import { Octocat } from "../assets/GitHub";
 
+/*
+ * Uncomplicated Lightweight Error Boundary Component
+ * Usage: <ErrorBoundary><MyComponentsParent /></ErrorBoundary>
+ */
 interface Props {
-  children?: ReactNode;
+  children?: React.ReactNode;
 }
 
 interface State {
   hasError: boolean;
-   errorinfo?: String | null;
+  errorinfo?: String | null;
 }
 
-
-class ErrorBoundary extends Component<Props, State> {
+class ErrorBoundary extends React.Component<Props, State> {
   public state: State = {
     hasError: false,
-    errorinfo: "Something unexpected went wrong !! It would be helpful if you raised this on Github, see the link above",
+    errorinfo:
+      "Sorry ... Something unexpected went wrong !!",
   };
 
-
-  public static getDerivedStateFromError(_: Error): State {
-    // Update state so the next render will show the fallback UI.
-    return { hasError: true };
+  public static getDerivedStateFromError(error: Error): State {
+    return { hasError: true, errorinfo: error.toString() };
   }
 
-  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    this.setState({hasError:true, errorinfo: errorInfo.toString()});
+  public componentDidCatch(error: Error, info: React.ErrorInfo) {
+    //  console.error("Uncaught error:", error, info);
+    // add a callback to log an error here.
   }
 
   public render() {
     if (this.state.hasError) {
       return (
-        <div className="flex flex-col border-double border-4 border-red-500 text-red-500 mt-8">
-          <h1 className="text-lg font-semibold p-5">Sorry.. there was an error</h1> <p className="p-5">{this.state.errorinfo}</p>
+        <div className="flex flex-col border-double border-8 border-red-500 text-red-500 mt-8">
+          <h1 className="text-lg font-semibold p-5 self-center">
+            Whoops ... there was an unexpected error !!
+          </h1>
+          <p className="p-5 self-center">{this.state.errorinfo}</p>
+          <a
+            className="flex flex-row items-center justify-center space-x-10 p-5"
+            href="https://github.com/Hillsie/marco-polo/issues/new"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <div>🙏️ </div>
+            <div className="underline decoration-solid underline-offset-8 decoration-blue-600 text-blue-600 font-semibold">
+              Appreciate it if you could raise an issue
+            </div>
+            <span className="text-black">
+              <Octocat option="dark" />
+            </span>
+          </a>
         </div>
       );
     }

@@ -1,5 +1,6 @@
 import * as React from "react";
-import MainContent from "../containers/MainContent"
+import ErrorBoundary from "../containers/ErrorBoundary";
+import MainContent from "../containers/MainContent";
 
 function Fallback() {
   return (
@@ -9,8 +10,10 @@ function Fallback() {
 
 function Home() {
   return (
-    <React.Suspense fallback={<Fallback/>}>
-      <MainContent />
+    <React.Suspense fallback={<Fallback />}>
+      <ErrorBoundary>
+        <MainContent />
+      </ErrorBoundary>
     </React.Suspense>
   );
 }
