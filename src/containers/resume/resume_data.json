@@ -1,0 +1,280 @@
+[
+    {
+        "key": "436f6e746163742044657461696c73",
+        "name": "xxxxx xxxxx",
+        "phone": "xxxxxxxxxxxxxxxxxxxxxxx",
+        "email": [
+            "xxxxxxxxxxxxxxxxxxxxxxx",
+            "xxxxxxxxxxxxxxxxxxxxxxx"
+        ],
+        "github_profile": "xxxxxxxxxxxxxxxxxxxxxxx",
+        "location": "xxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+        "key": "50726f66696c65",
+        "content": "xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx  xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx  xxxxxxxxxxxxx xxxxxxxxxxxxx  xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxx."
+    },
+    {
+        "key": "546563686e6963616c20536b696c6c73",
+        "current": [
+            [
+                "xxxxxxxxxxxxxx",
+                40
+            ],
+            [
+                "xxxxxxxxxxxxxx",
+                20
+            ],
+            [
+                "xxxxxxxxxxxxxx",
+                90
+            ],
+            [
+                "xxxxxxxxxxxxxx",
+                30
+            ],
+            [
+                "xxxxxxxxxxxxxx",
+                100
+            ],
+            [
+                "xxxxxxxxxxxxxx",
+                30
+            ],
+            [
+                "xxxxxxxxxxxxxx",
+                100
+            ],
+            [
+                "xxxxxxxxxxxxxx",
+                10
+            ]
+        ],
+        "frameworks": [
+            [
+                "xxxxxxxxx",
+                25
+            ],
+            [
+                "xxxxxxxxx",
+                30
+            ],
+            [
+                "xxxxxxxxx",
+                70
+            ]
+        ],
+        "operating_systems": [
+            [
+                "xxxxxxx",
+                40
+            ],
+            [
+                "xxxxxxx",
+                50
+            ],
+            [
+                "xxxxxxx",
+                40
+            ]
+        ],
+        "virtualization": [
+            [
+                "xxxxxxxxxxxx",
+                30
+            ],
+            [
+                "xxxxxxxxxxxx",
+                30
+            ],
+            [
+                "xxxxxxxxxxxx",
+                30
+            ],
+            [
+                "xxxxxxxxxxxx",
+                40
+            ]
+        ]
+    },
+    {
+        "key": "4361726565722053756d6d617279",
+        "content": [
+            {
+                "key": "537475647920616e642046616d696c79",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "Nov 20xx -  current",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx"
+                ]
+            },
+            {
+                "key": "52264420536f66747761726520446576656c6f706572",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "Feb 20xx - Dec 20xx",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx"
+                ],
+                "576879206469642049206c656176653f": [
+                    "546xxx86520726f6c65207761736e2774206120676f6f642066697420666f72206d652e ",
+                    "546865726xxx52077686572652070726f6d69736573206d61646520746f206d65207768656e204920636f6d6d656e6365642074686520726f6c652074686174207768657265206e6f742066756c66696c6c65642e"
+                ]
+            },
+            {
+                "key": "536f667761726520446576656c6f706572",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "Aug 20xx - Dec 20xx",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx"
+                ]
+            },
+            {
+                "key": "53656c6620456d706c6f796564",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "Dec 20xx - Jul 20xx",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx"
+                ]
+            },
+            {
+                "key": "5475746f72696e67",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "April 20xx - Feb 20xx",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx"
+                ]
+            },
+            {
+                "key": "53797374656d2041646d696e697374726174696f6e",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "August 20xx - Dec 20xx",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx"
+                ]
+            },
+            {
+                "key": "546563686e6f6c6f677920436f6e73756c74696e67",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "Aug 20xx - Feb 20xx",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx",
+                    "xxxxx"
+                ]
+            },
+            {
+                "key": "4164646974696f6e616c20456d706c6f796d656e7420486973746f727920417661696c61626c652055706f6e2052657175657374",
+                "role": "xxxxxxxxxxxxx",
+                "company": "xxxxxxxxxxxxx",
+                "duration": "Aug 20xx- WayBack Machine",
+                "role_description": [
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                ],
+                "skills": [
+                    "xxxxx",
+                    "xxxxx"
+                ]
+            }
+        ]
+    },
+    {
+        "key": "456475636174696f6e",
+        "content": [
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "key": "506572736f6e616c20496e74657265737473",
+        "content": [
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    }
+]

@@ -5,7 +5,7 @@
 @tailwind components;
 @layer base {
     body {
-        @apply select-none;
+        @apply select-none bg-slate-100;
     }
     @screen sm {
         body {
@@ -65,10 +65,3 @@
     transform: translateX(5%);
   }
 }
-
-
-
-  
-
-
-

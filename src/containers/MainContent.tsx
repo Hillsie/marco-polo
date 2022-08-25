@@ -10,8 +10,8 @@ const MainContent = observer(function MainContent(): JSX.Element {
   const store = MarcoPoloStore;
   return (
     <div className="relative flex flex-col items-center z-0">
-        <SimonSays />
-        <GameController store={store} />
+      <SimonSays />
+      <GameController store={store} />
     </div>
   );
 });
